@@ -38,8 +38,12 @@ def compile_java(fpath_src):
     )
 
 
-def compile_perl(fpath_src):
+def compile_pl(fpath_src):
     return "wsl perl {}".format(win2wsl(fpath_src))
+
+
+def compile_sh(fpath_src):
+    return "wsl bash {}".format(win2wsl(fpath_src))
 
 
 # CONSTANTS
@@ -48,11 +52,14 @@ def compile_perl(fpath_src):
 DCT_RUNNER = {
     "c": compile_c,
     "cpp": compile_cpp,
+    "go": "go run {}".format,
     "java": compile_java,
     "jl": "julia {}".format,
-    "pl": compile_perl,
+    "js": "node {}".format,
+    "pl": compile_pl,
     "py": "python {}".format,
     "r": "Rscript {}".format,
+    "sh": compile_sh,
 }
 
 
