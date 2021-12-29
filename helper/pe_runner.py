@@ -72,6 +72,8 @@ if __name__ == "__main__":
 
     dpath_src = here("../src")
     langs = os.listdir(dpath_src)
+
+    print()
     for lang in langs:
         dpath_lang = here(dpath_src, lang)
         scripts = os.listdir(dpath_lang)
@@ -80,4 +82,6 @@ if __name__ == "__main__":
             if script.endswith("exe"):
                 os.remove(fpath_script)
             elif script.startswith(prefix):
+                print("> [{}] says...\n".format(lang))
                 run(DCT_RUNNER[lang](fpath_script))
+                print()
