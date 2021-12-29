@@ -7,6 +7,10 @@ import subprocess
 # FUNCTIONS
 
 
+def win2wsl(fpath):
+    return os.path.normpath(fpath).replace("\\", "/").replace("C:", "/mnt/c")
+
+
 def here(*args):
     return os.path.realpath(os.path.join(sys.path[0], *args))
 
@@ -16,25 +20,37 @@ def run(lines):
         os.system(cmd)
 
 
-def cmd_c(fpath_src):
+def compile_c(fpath_src):
     fpath_bin = fpath_src.replace("\\src\\", "\\bin\\").split(".")[0] + ".exe"
-    lines = "gcc {} -o {}\n{}".format(fpath_src, fpath_bin, fpath_bin)
-    return lines
+    return "gcc {} -o {}\n{}".format(fpath_src, fpath_bin, fpath_bin)
 
 
-def cmd_cpp(fpath_src):
+def compile_cpp(fpath_src):
     fpath_bin = fpath_src.replace("\\src\\", "\\bin\\").split(".")[0] + ".exe"
-    lines = "g++ {} -o {}\n{}".format(fpath_src, fpath_bin, fpath_bin)
-    return lines
+    return "g++ {} -o {}\n{}".format(fpath_src, fpath_bin, fpath_bin)
+
+
+def compile_java(fpath_src):
+    dpath = fpath_src.replace("\\src\\", "\\bin\\").split(".")[0]
+    name = fpath_src.split("\\")[-1].replace(".java", "")
+    return "javac {} -d {}\ncd {} & java {}".format(
+        fpath_src, dpath, dpath, name
+    )
+
+
+def compile_perl(fpath_src):
+    return "wsl perl {}".format(win2wsl(fpath_src))
 
 
 # CONSTANTS
 
 
 DCT_RUNNER = {
-    "c": cmd_c,
-    "cpp": cmd_cpp,
+    "c": compile_c,
+    "cpp": compile_cpp,
+    "java": compile_java,
     "jl": "julia {}".format,
+    "pl": compile_perl,
     "py": "python {}".format,
     "r": "Rscript {}".format,
 }
