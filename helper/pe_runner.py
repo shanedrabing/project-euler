@@ -33,9 +33,8 @@ def compile_cpp(fpath_src):
 def compile_java(fpath_src):
     dpath = fpath_src.replace("\\src\\", "\\bin\\").split(".")[0]
     name = fpath_src.split("\\")[-1].replace(".java", "")
-    return "javac {} -d {}\ncd {} & java {}".format(
-        fpath_src, dpath, dpath, name
-    )
+    tup = (fpath_src, dpath, dpath, name)
+    return "javac {} -d {}\ncd {} & java {}".format(*tup)
 
 
 def compile_pl(fpath_src):
@@ -67,13 +66,15 @@ DCT_RUNNER = {
 
 
 if __name__ == "__main__":
-    problem = 1
+    if len(sys.argv) != 2:
+        exit()
+
+    problem = int(sys.argv[1])
     prefix = "pe_{:04d}".format(problem)
 
     dpath_src = here("../src")
     langs = os.listdir(dpath_src)
 
-    print()
     for lang in langs:
         dpath_lang = here(dpath_src, lang)
         scripts = os.listdir(dpath_lang)
@@ -82,6 +83,6 @@ if __name__ == "__main__":
             if script.endswith("exe"):
                 os.remove(fpath_script)
             elif script.startswith(prefix):
-                print("> [{}] says...\n".format(lang))
+                print("\n> [{}] says...\n".format(lang))
                 run(DCT_RUNNER[lang](fpath_script))
-                print()
+    print()
