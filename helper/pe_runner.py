@@ -7,10 +7,6 @@ import subprocess
 # FUNCTIONS
 
 
-def win2wsl(fpath):
-    return os.path.normpath(fpath).replace("\\", "/").replace("C:", "/mnt/c")
-
-
 def here(*args):
     return os.path.realpath(os.path.join(sys.path[0], *args))
 
@@ -18,6 +14,10 @@ def here(*args):
 def run(lines):
     for cmd in lines.split("\n"):
         os.system(cmd)
+
+
+def win2wsl(fpath):
+    return os.path.normpath(fpath).replace("\\", "/").replace("C:", "/mnt/c")
 
 
 def compile_c(fpath_src):
