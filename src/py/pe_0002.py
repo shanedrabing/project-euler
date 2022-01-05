@@ -1,4 +1,4 @@
-def fibonacci(a, b):
+def fibonacci(a=1, b=1):
     yield a
     yield from fibonacci(b, a + b)
 
