@@ -9,6 +9,15 @@ def is_palindromic(n):
     return str_n == str_n[::-1]
 
 
+def reverse_number(n):
+    m = 0
+    while (n != 0):
+        m *= 10
+        m += n % 10
+        n //= 10
+    return m
+
+
 # SCRIPT
 
 
