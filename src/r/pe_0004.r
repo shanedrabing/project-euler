@@ -11,7 +11,8 @@ prods <- NULL
 for (a in 100:999) {
     prods <- c(prods, a * (a:999))
 }
-prods <- unique(prods)
 
+prods <- unique(prods)
 index <- sapply(prods, is_palindromic)
-max(prods[index])
+
+cat(max(prods[index]), "\n")
