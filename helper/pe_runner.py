@@ -66,6 +66,8 @@ DCT_RUNNER = {
 
 
 if __name__ == "__main__":
+    import time
+
     if len(sys.argv) != 2:
         exit()
 
@@ -84,5 +86,8 @@ if __name__ == "__main__":
                 os.remove(fpath_script)
             elif script.startswith(prefix):
                 print("\n> [{}] says...\n".format(lang))
+                start = time.monotonic()
                 run(DCT_RUNNER[lang](fpath_script))
+                end = time.monotonic()
+                print(f"{end - start:.2f} sec")
     print()
