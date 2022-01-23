@@ -9,18 +9,14 @@ texts <- lapply(fpaths, function(fpath) {
 })
 
 texts <- lapply(texts, function(text) {
-    text <- gsub("(#+)", "#\\1", text)
+    text <- gsub("(#+)\\s+?([^\n]+)", "<details><summary>\\2</summary>", text)
     text <- gsub("```(\\n|$)", "```\n\n</details>\n", text)
-    text <- gsub(
-        "(```)(\\w+)",
-        "<details><summary>\\2</summary>\n\n\\1\\2",
-        text
-    )
+    text <- gsub("(```)(\\w+)", "<details><summary>\\2</summary>\n\n\\1\\2", text)
 })
 
 out <- sprintf(
     "# Project Euler\n\n%s",
-    paste(texts, collapse = "\n\n")
+    paste(sprintf("%s\n</details>", texts), collapse = "\n")
 )
 
 writeLines(trimws(out), "README.md")

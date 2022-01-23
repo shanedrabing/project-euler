@@ -1,6 +1,6 @@
 # Project Euler
 
-## If, Else-If, and Else
+<details><summary>If, Else-If, and Else</summary>
 
 <details><summary>c</summary>
 
@@ -168,5 +168,7 @@ else
     echo "$i";
 fi
 ```
+
+</details>
 
 </details>
