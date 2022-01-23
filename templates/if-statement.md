@@ -52,7 +52,7 @@ if (i % 15 == 0) {
 }
 ```
 
-```jl
+```julia
 i = 10
 if i % 15 == 0
     println("FizzBuzz")
