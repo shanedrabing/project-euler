@@ -2,7 +2,7 @@
 
 Click on the spoilers below for syntax hints!
 
-<details><summary>If, else-if, and else</summary>
+<details><summary>If, else-if, and else</summary><br>
 
 Example for C
 

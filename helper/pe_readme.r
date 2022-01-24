@@ -22,7 +22,7 @@ texts <- lapply(fpaths, function(fpath) {
 })
 
 texts <- lapply(texts, function(text) {
-    text <- gsub("(#+)\\s+?([^\n]+)", "<details><summary>\\2</summary>", text)
+    text <- gsub("(#+)\\s+?([^\n]+)", "<details><summary>\\2</summary><br>", text)
     # text <- gsub("```(\\n|$)", "```\n\n</details>\n", text)
     # text <- gsub("(```)(\\w+)", "<details><summary>\\2</summary>\n\n\\1\\2", text)
     text <- gsub("(```)(\\w+)", "!!!\\2!!!\n\n\\1\\2", text)
