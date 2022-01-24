@@ -1,4 +1,4 @@
-# If, Else-If, and Else
+# If, else-if, and else
 
 ```c
 int i = 10;

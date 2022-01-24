@@ -1,8 +1,8 @@
 # Project Euler
 
-<details><summary>If, Else-If, and Else</summary>
+<details><summary>If, else-if, and else</summary>
 
-<details><summary>c</summary>
+C
 
 ```c
 int i = 10;
@@ -17,9 +17,7 @@ if (i % 15 == 0) {
 }
 ```
 
-</details>
-
-<details><summary>cpp</summary>
+C++
 
 ```cpp
 int i = 10;
@@ -34,9 +32,7 @@ if (i % 15 == 0) {
 }
 ```
 
-</details>
-
-<details><summary>go</summary>
+Go
 
 ```go
 i := 10
@@ -51,9 +47,7 @@ if i % 15 == 0 {
 }
 ```
 
-</details>
-
-<details><summary>java</summary>
+Java
 
 ```java
 int i = 10;
@@ -68,9 +62,7 @@ if (i % 15 == 0) {
 }
 ```
 
-</details>
-
-<details><summary>julia</summary>
+Julia
 
 ```julia
 i = 10
@@ -85,9 +77,7 @@ else
 end
 ```
 
-</details>
-
-<details><summary>js</summary>
+JavaScript
 
 ```js
 i = 10;
@@ -102,9 +92,7 @@ if (i % 15 == 0) {
 }
 ```
 
-</details>
-
-<details><summary>pl</summary>
+Perl
 
 ```pl
 $i = 10;
@@ -119,9 +107,7 @@ if ($i % 15 == 0) {
 }
 ```
 
-</details>
-
-<details><summary>py</summary>
+Python
 
 ```py
 i = 10
@@ -135,9 +121,7 @@ else:
     print(i)
 ```
 
-</details>
-
-<details><summary>r</summary>
+R
 
 ```r
 i = 10;
@@ -152,9 +136,7 @@ if (i %% 15 == 0) {
 }
 ```
 
-</details>
-
-<details><summary>sh</summary>
+Bash
 
 ```sh
 i=10;
@@ -168,7 +150,5 @@ else
     echo "$i";
 fi
 ```
-
-</details>
 
 </details>
