@@ -27,13 +27,13 @@ texts <- lapply(texts, function(text) {
     # text <- gsub("(```)(\\w+)", "<details><summary>\\2</summary>\n\n\\1\\2", text)
     text <- gsub("(```)(\\w+)", "!!!\\2!!!\n\n\\1\\2", text)
     for (i in 1:nrow(langs)) {
-        text <- gsub(sprintf("!!!%s!!!", langs[i, 1]), langs[i, 2], text)
+        text <- gsub(sprintf("!!!%s!!!", langs[i, 1]), sprintf("Example for %s", langs[i, 2]), text)
     }
     text
 })
 
 out <- sprintf(
-    "# Project Euler\n\n%s",
+    "# Project Euler\n\nClick on the spoilers below for syntax hints!\n\n%s",
     paste(sprintf("%s\n\n</details>", texts), collapse = "\n")
 )
 

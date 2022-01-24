@@ -1,8 +1,10 @@
 # Project Euler
 
+Click on the spoilers below for syntax hints!
+
 <details><summary>If, else-if, and else</summary>
 
-C
+Example for C
 
 ```c
 int i = 10;
@@ -17,7 +19,7 @@ if (i % 15 == 0) {
 }
 ```
 
-C++
+Example for C++
 
 ```cpp
 int i = 10;
@@ -32,7 +34,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Go
+Example for Go
 
 ```go
 i := 10
@@ -47,7 +49,7 @@ if i % 15 == 0 {
 }
 ```
 
-Java
+Example for Java
 
 ```java
 int i = 10;
@@ -62,7 +64,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Julia
+Example for Julia
 
 ```julia
 i = 10
@@ -77,7 +79,7 @@ else
 end
 ```
 
-JavaScript
+Example for JavaScript
 
 ```js
 i = 10;
@@ -92,7 +94,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Perl
+Example for Perl
 
 ```pl
 $i = 10;
@@ -107,7 +109,7 @@ if ($i % 15 == 0) {
 }
 ```
 
-Python
+Example for Python
 
 ```py
 i = 10
@@ -121,7 +123,7 @@ else:
     print(i)
 ```
 
-R
+Example for R
 
 ```r
 i = 10;
@@ -136,7 +138,7 @@ if (i %% 15 == 0) {
 }
 ```
 
-Bash
+Example for Bash
 
 ```sh
 i=10;
