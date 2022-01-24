@@ -1,4 +1,4 @@
-# If, else-if, and else
+# Control Flow (if, else-if, else)
 
 ```c
 int i = 10;

@@ -2,9 +2,9 @@
 
 Click on the spoilers below for syntax hints!
 
-<details><summary>If, else-if, and else</summary><br>
+<details><summary>Control Flow (if, else-if, else)</summary><br>
 
-Example for C
+Example in C
 
 ```c
 int i = 10;
@@ -19,7 +19,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Example for C++
+Example in C++
 
 ```cpp
 int i = 10;
@@ -34,7 +34,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Example for Go
+Example in Go
 
 ```go
 i := 10
@@ -49,7 +49,7 @@ if i % 15 == 0 {
 }
 ```
 
-Example for Java
+Example in Java
 
 ```java
 int i = 10;
@@ -64,7 +64,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Example for Julia
+Example in Julia
 
 ```julia
 i = 10
@@ -79,7 +79,7 @@ else
 end
 ```
 
-Example for JavaScript
+Example in JavaScript
 
 ```js
 i = 10;
@@ -94,7 +94,7 @@ if (i % 15 == 0) {
 }
 ```
 
-Example for Perl
+Example in Perl
 
 ```pl
 $i = 10;
@@ -109,7 +109,7 @@ if ($i % 15 == 0) {
 }
 ```
 
-Example for Python
+Example in Python
 
 ```py
 i = 10
@@ -123,7 +123,7 @@ else:
     print(i)
 ```
 
-Example for R
+Example in R
 
 ```r
 i = 10;
@@ -138,7 +138,7 @@ if (i %% 15 == 0) {
 }
 ```
 
-Example for Bash
+Example in Bash
 
 ```sh
 i=10;
