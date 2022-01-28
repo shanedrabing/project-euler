@@ -2,8 +2,6 @@
 
 
 def is_prime_6k1(n):
-    prime = True
-
     if n <= 3:
         return n > 1
     elif n % 2 == 0 or n % 3 == 0:

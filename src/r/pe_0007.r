@@ -2,8 +2,6 @@
 
 
 is_prime_6k1 <- function(n) {
-    prime <- TRUE
-
     if (n <= 3) {
         return(n > 1)
     } else if (n %% 2 == 0 || n %% 3 == 0) {
