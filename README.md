@@ -1,5 +1,20 @@
 # Project Euler
 
+Progress:
+
+```txt
+   c (  8): [#                                                                ]
+ cpp (  8): [#                                                                ]
+  go (  8): [#                                                                ]
+java (  8): [#                                                                ]
+  jl (  8): [#                                                                ]
+  js (  8): [#                                                                ]
+  pl (  8): [#                                                                ]
+  py (  8): [#                                                                ]
+   r (  8): [#                                                                ]
+  sh (  8): [#                                                                ]
+```
+
 Click on the spoilers below for syntax hints!
 
 <details><summary>Control Flow (if, else-if, else)</summary><br>

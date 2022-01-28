@@ -2,6 +2,38 @@ dir_full <- function(dpath) {
     file.path(dpath, dir(dpath))
 }
 
+
+# PROGRESS REPORT
+
+
+fnames <- unlist(sapply(dir_full("src"), dir_full))
+mat <- do.call(rbind, strsplit(fnames, "/"))[, -1]
+
+length <- 65
+dat <- table(mat[!grepl("_fail", mat[, 2]), 1])
+tbl <- round(length * dat / 772)
+tbl
+
+build <- ""
+for (k in sort(names(tbl))) {
+    v <- tbl[[k]]
+    u <- length - v
+    build <- paste0(
+        trimws(build, which = "right"), "\n",
+        sprintf("%4s", k),
+        sprintf(" (%3.d)", dat[k]),
+        ": [",
+        paste(rep("#", v), collapse = ""),
+        paste(rep(" ", u), collapse = ""),
+        "]",
+        collapse = ""
+    )
+}
+
+
+# TEMPLATES
+
+
 langs <- rbind(
     c("c", "C"),
     c("cpp", "C++"),
@@ -34,8 +66,13 @@ texts <- lapply(texts, function(text) {
     text
 })
 
+
+# FINAL DOC
+
+
 out <- sprintf(
-    "# Project Euler\n\nClick on the spoilers below for syntax hints!\n\n%s",
+    "# Project Euler\n\nProgress:\n\n```txt%s\n```\n\nClick on the spoilers below for syntax hints!\n\n%s",
+    build,
     paste(sprintf("%s\n\n</details>", texts), collapse = "\n")
 )
 
