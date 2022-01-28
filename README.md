@@ -3,16 +3,16 @@
 Progress:
 
 ```txt
-   c (  8): [#                                                                ]
- cpp (  8): [#                                                                ]
-  go (  8): [#                                                                ]
-java (  8): [#                                                                ]
-  jl (  8): [#                                                                ]
-  js (  8): [#                                                                ]
-  pl (  8): [#                                                                ]
-  py (  8): [#                                                                ]
-   r (  8): [#                                                                ]
-  sh (  8): [#                                                                ]
+   c (  7): [#                                                                ]
+ cpp (  7): [#                                                                ]
+  go (  7): [#                                                                ]
+java (  7): [#                                                                ]
+  jl (  7): [#                                                                ]
+  js (  7): [#                                                                ]
+  pl (  7): [#                                                                ]
+  py (  7): [#                                                                ]
+   r (  7): [#                                                                ]
+  sh (  7): [#                                                                ]
 ```
 
 Click on the spoilers below for syntax hints!
