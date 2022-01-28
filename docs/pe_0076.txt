@@ -1,6 +1,7 @@
 https://projecteuler.net/problem=76
 
-It is possible to write five as a sum in exactly six different ways:
+It is possible to write five as a sum in exactly six different
+ways:
 
 4 + 1
 
@@ -14,5 +15,5 @@ It is possible to write five as a sum in exactly six different ways:
 
 1 + 1 + 1 + 1 + 1
 
-How many different ways can one hundred be written as a sum of at least two
-positive integers?
+How many different ways can one hundred be written as a sum of
+at least two positive integers?

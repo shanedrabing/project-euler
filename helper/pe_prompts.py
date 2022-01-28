@@ -25,7 +25,7 @@ def wrap(text):
     line, *words = words
     for x in words:
         trial = " ".join((line, x))
-        if len(trial) < 80:
+        if len(trial) < 64:
             line = trial
         else:
             lines.append(line.replace("- ", "-"))
@@ -53,5 +53,5 @@ if __name__ == "__main__":
         text = problem.text.strip()
         clean = "\n\n".join((url, *map(wrap, text.split("\n"))))
 
-        with open("doc/pe_{:>04d}.txt".format(i), "w", encoding="utf8") as fh:
+        with open("docs/pe_{:>04d}.txt".format(i), "w", encoding="utf8") as fh:
             print(clean, file=fh)
