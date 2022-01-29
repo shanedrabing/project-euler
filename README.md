@@ -17,7 +17,7 @@ java (  7): [#                                                                ]
   sh (  7): [#                                                                ]
 ```
 
-</details><br>
+</details>
 
 ## Syntax Templates
 

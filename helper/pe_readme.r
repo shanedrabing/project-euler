@@ -72,7 +72,7 @@ texts <- lapply(texts, function(text) {
 form <- "# Project Euler\n
 ## Progress\n\n<details><summary>View</summary><br>\n
 ```txt%s\n```\n
-</details><br>\n
+</details>\n
 ## Syntax Templates\n
 %s"
 
