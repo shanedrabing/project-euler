@@ -1,6 +1,8 @@
 # Project Euler
 
-Progress:
+## Progress
+
+<details><summary>View</summary><br>
 
 ```txt
    c (  7): [#                                                                ]
@@ -15,7 +17,9 @@ java (  7): [#                                                                ]
   sh (  7): [#                                                                ]
 ```
 
-Click on the spoilers below for syntax hints!
+</details><br>
+
+## Syntax Templates
 
 <details><summary>Control Flow (if, else-if, else)</summary><br>
 

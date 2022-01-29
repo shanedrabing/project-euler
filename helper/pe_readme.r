@@ -69,8 +69,15 @@ texts <- lapply(texts, function(text) {
 # FINAL DOC
 
 
+form <- "# Project Euler\n
+## Progress\n\n<details><summary>View</summary><br>\n
+```txt%s\n```\n
+</details><br>\n
+## Syntax Templates\n
+%s"
+
 out <- sprintf(
-    "# Project Euler\n\nProgress:\n\n```txt%s\n```\n\nClick on the spoilers below for syntax hints!\n\n%s",
+    form,
     build,
     paste(sprintf("%s\n\n</details>", texts), collapse = "\n")
 )
