@@ -169,3 +169,105 @@ fi
 ```
 
 </details>
+<details><summary>For-Loop (numeric)</summary><br>
+
+Example in C
+
+```c
+int n = 1;
+for (int i = 1; i <= 10; ++i) {
+    printf("%d\n", n);
+    n *= i;
+}
+```
+
+Example in C++
+
+```cpp
+int n = 1;
+for (int i = 1; i <= 10; ++i) {
+    std::cout << n << std::endl;
+    n *= i;
+}
+```
+
+Example in Go
+
+```go
+n := 1
+for i := 1; i <= 10; i++ {
+    println(n)
+    n *= i;
+}
+```
+
+Example in Java
+
+```java
+int n = 1;
+for (int i = 1; i <= 10; ++i) {
+    System.out.println(n);
+    n *= i;
+}
+```
+
+Example in Julia
+
+```julia
+n = 1
+for i in 1:10
+    println(n)
+    n *= i
+end
+```
+
+Example in JavaScript
+
+```js
+n = 1;
+for (i = 1; i <= 10; ++i) {
+    console.log(n);
+    n *= i;
+}
+```
+
+Example in Perl
+
+```pl
+$n = 1;
+for ($i = 1; $i <= 10; ++$i) {
+    print $n . "\n";
+    $n *= $i;
+}
+```
+
+Example in Python
+
+```py
+n = 1
+for i in range(1, 10 + 1):
+    print(n)
+    n *= i
+```
+
+Example in R
+
+```r
+n = 1
+for (i in 1:10) {
+    message(n)
+    n <- n * i
+}
+```
+
+Example in Bash
+
+```sh
+n=1;
+for i in {1..10}; do
+    echo $n;
+    (( n *= i ));
+done
+```
+
+</details>

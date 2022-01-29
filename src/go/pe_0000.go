@@ -1,14 +1,9 @@
 package main
 
 func main() {
-	i := 10
-    if i % 15 == 0 {
-        println("FizzBuzz")
-    } else if i % 3 == 0 {
-        println("Fizz")
-    } else if i % 5 == 0 {
-        println("Buzz")
-    } else {
-        println(i)
+    n := 1
+    for i := 1; i <= 10; i++ {
+        println(n)
+        n *= i;
     }
 }

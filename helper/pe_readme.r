@@ -12,7 +12,6 @@ mat <- do.call(rbind, strsplit(fnames, "/"))[, -1]
 length <- 65
 dat <- table(mat[!grepl("_fail", mat[, 2]), 1]) - 1
 tbl <- round(length * dat / 772)
-tbl
 
 build <- ""
 for (k in sort(names(tbl))) {

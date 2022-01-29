@@ -1,10 +1,9 @@
-i = 10
-if i % 15 == 0
-    println("FizzBuzz")
-elseif i % 3 == 0
-    println("Fizz")
-elseif i % 5 == 0
-    println("Buzz")
-else
-    println(i)
+function main()
+    n = 1
+    for i in 1:10
+        println(n)
+        n *= i
+    end
 end
+
+main()
