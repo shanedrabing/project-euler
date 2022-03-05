@@ -1,7 +1,7 @@
 # SCRIPT
 
 
-lines <- readLines("data/0008.txt")
+lines <- readLines("data/pe_0008.txt")
 digit <- as.integer(unlist(strsplit(lines, "")))
 
 i <- 0

@@ -11,7 +11,7 @@ my @arr = (0, 0, 0, 0);
 my $i = 0;
 my $hold = 0;
 
-open(my $fh, " data/0008.txt") or die "Error opening file";
+open(my $fh, " data/pe_0008.txt") or die "Error opening file";
 
 while (<$fh>) {
     my @chars = split //;

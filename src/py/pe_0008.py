@@ -13,7 +13,7 @@ def prod(itr):
 
 
 if __name__ == "__main__":
-    fpath = "data/0008.txt"
+    fpath = "data/pe_0008.txt"
     fh = open(fpath, encoding="utf8")
 
     i = 0

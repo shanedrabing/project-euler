@@ -21,6 +21,6 @@ while read -n 1 char; do
             hold=$p;
         fi
     fi
-done < data/0008.txt;
+done < data/pe_0008.txt;
 
 echo $hold;
