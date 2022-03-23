@@ -13,7 +13,8 @@ for (a in 1:1000) {
     for (b in (a + 1):(1000 - a)) {
         c = 1000 - (a + b)
         if (is_triplet(a, b, c)) {
-            message(a, b, c)
+            cat(a, b, c, "\n", sep = " ")
+            quit("no")
         }
     }
 }
