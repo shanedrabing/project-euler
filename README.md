@@ -2,22 +2,18 @@
 
 ## Progress
 
-<details><summary>View</summary><br>
-
 ```txt
-   c (  9): [#                                                                ]
- cpp (  9): [#                                                                ]
-  go (  9): [#                                                                ]
-java (  9): [#                                                                ]
-  jl (  9): [#                                                                ]
-  js (  9): [#                                                                ]
+   c ( 10): [#                                                                ]
+ cpp ( 10): [#                                                                ]
+  go ( 10): [#                                                                ]
+java ( 10): [#                                                                ]
+  jl ( 10): [#                                                                ]
+  js ( 10): [#                                                                ]
   pl (  9): [#                                                                ]
   py (  9): [#                                                                ]
    r (  9): [#                                                                ]
   sh (  9): [#                                                                ]
 ```
-
-</details>
 
 ## Syntax Templates
 
