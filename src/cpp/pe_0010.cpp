@@ -1,6 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include <iostream>
+#include <vector>
+
+
+// USING
+
+
+using std::cout;
+using std::endl;
+using std::vector;
 
 
 // SCRIPT
@@ -8,45 +15,42 @@
 
 int main() {
     // initialize variables
-    int i, j, size, half;
-    unsigned long long gross;
-    _Bool prime[2000000];
+    uint64_t i, j, size, half, gross;
 
     // array size
     size = 2000000;
     half = size / 2;
 
-    // set all false (perhaps unnecessary)
-    for (i = 0; i < size; i++) {
-        prime[i] = 0;
-    }
+    // new array, all false
+    vector<bool> prime;
+    prime.resize(size, false);
 
-    // set two as prime, begin sum
-    prime[2] = 1;
+    // two is prime, begin sum
+    prime[2] = true;
     gross = 2;
 
     // all odds are potential primes
     for (i = 3; i < size; i += 2) {
-        prime[i] = 1;
+        prime[i] = true;
     }
 
     // disregard multiples of primes
     for (i = 3; i < half; i += 2) {
-        if (prime[i] == 1) {
+        if (prime[i] == true) {
             gross += i;
             for (j = i * 2; j < size; j += i) {
-                prime[j] = 0;
+                prime[j] = false;
             }
         }
     }
 
     // continue the sum
     for (; i < size; i += 2) {
-        if (prime[i] == 1) {
+        if (prime[i] == true) {
             gross += i;
         }
     }
 
     // print out
-    printf("%llu\n", gross);
+    cout << gross << endl;
 }
