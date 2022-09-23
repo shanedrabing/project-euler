@@ -30,9 +30,38 @@ func square_of_sum(arr []int) int {
 
 
 func main() {
-    arr := []int{}
-    for n := range [100]int{} {
-        arr = append(arr, n + 1)
+    // initialize vairables
+    size := 10;
+    half := size / 2
+    prime := make([]bool, size)
+
+    // set two as prime, begin sum
+    prime[2] = true;
+    gross := 2
+
+    // all odds are potential primes
+    for i := 3; i < size; i += 2 {
+        prime[i] = true
     }
-    println(square_of_sum(arr) - sum_of_squares(arr))
+
+    // disregard multiples of primes
+    i := 3
+    for ; i < half; i += 2 {
+        if prime[i] {
+            gross += i
+            for j := i * 2; j < size; j += i {
+                prime[j] = false
+            }
+        }
+    }
+
+    // continue the sum
+    for ; i < size; i += 2 {
+        if prime[i] {
+            gross += i
+        }
+    }
+
+    // print out
+    println(gross)
 }
