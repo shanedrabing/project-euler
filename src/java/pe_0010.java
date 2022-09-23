@@ -1,33 +1,53 @@
 import java.util.ArrayList;
-import java.util.stream.Stream;
 
-public class pe_0006 {
-
-    // FUNCTIONS
-
-
-    public static int sum(Stream<Integer> arr) {
-        return arr.reduce(0, Integer::sum);
-    }
-
-    public static int sum_of_squares(ArrayList<Integer> arr) {
-        return sum(arr.stream().map(n -> n * n));
-    }
-
-    public static int square_of_sum(ArrayList<Integer> arr) {
-        int gross = sum(arr.stream());
-        return gross * gross;
-    }
-
+public class pe_0010 {
 
     // SCRIPT
 
-
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<Integer>();
-        for (int n = 1; n <= 100; ++n) {
-            arr.add(n);
+        // initialize variables
+        int i, j, size, half;
+        long gross;
+
+        // array size
+        size = 2000000;
+        half = size / 2;
+
+        // new array
+        ArrayList<Boolean> prime = new ArrayList<Boolean>(size);
+
+        // why does Java blow?
+        while(prime.size() < size) {
+            prime.add(false);
         }
-        System.out.println(square_of_sum(arr) - sum_of_squares(arr));
+
+        // two is prime, begin sum
+        prime.set(2, true);
+        gross = 2;
+
+        // all odds are potential primes
+        for (i = 3; i < size; i += 2) {
+            prime.set(i, true);
+        }
+
+        // disregard multiples of primes
+        for (i = 3; i < half; i += 2) {
+            if (prime.get(i)) {
+                gross += i;
+                for (j = i * 2; j < size; j += i) {
+                    prime.set(j, false);
+                }
+            }
+        }
+
+        // continue the sum
+        for (; i < size; i += 2) {
+            if (prime.get(i)) {
+                gross += i;
+            }
+        }
+
+        // print out
+        System.out.println(gross);
     }
 }
