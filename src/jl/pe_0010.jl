@@ -5,9 +5,8 @@ function main()
     # initialize vairables
     size = 2000000
     half = size ÷ 2
-    
     prime = BitArray(undef, size)
-    
+
     # set two as prime, begin sum
     prime[2] = true
     gross = 2
