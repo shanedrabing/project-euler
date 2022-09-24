@@ -71,13 +71,15 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         exit()
 
-    problem = int(sys.argv[1])
-    prefix = "pe_{:04d}".format(problem)
+    problem, *picks = sys.argv[1].split(":")
+    prefix = "pe_{:04d}".format(int(problem))
 
     dpath_src = here("../src")
     langs = os.listdir(dpath_src)
 
     for lang in langs:
+        if picks and lang not in picks:
+            continue
         dpath_lang = here(dpath_src, lang)
         scripts = os.listdir(dpath_lang)
         for script in scripts:

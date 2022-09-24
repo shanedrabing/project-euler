@@ -12,6 +12,7 @@
     prime[2] <- TRUE
     gross <- 2
 
+    # disregard multiples of primes
     for (i in seq(3, half, 2)) {
         if (prime[i]) {
             gross <- gross + i
