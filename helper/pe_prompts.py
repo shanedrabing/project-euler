@@ -42,16 +42,17 @@ def wrap(text):
 if __name__ == "__main__":
     import time
 
-    for i in range(1, 100):
+    for i in range(1, 21):
         url = "https://projecteuler.net/problem={}".format(i)
         
         # time.sleep(1)
         html = get(url)
         soup = parse(html)
-        
+    
+        title = soup.select_one("h2").text.strip()
         problem = soup.select_one(".problem_content")
         text = problem.text.strip()
-        clean = "\n\n".join((url, *map(wrap, text.split("\n"))))
+        clean = "\n\n".join((url, "# " + title, *map(wrap, text.split("\n"))))
 
         with open("docs/pe_{:>04d}.txt".format(i), "w", encoding="utf8") as fh:
             print(clean, file=fh)

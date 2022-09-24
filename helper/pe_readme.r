@@ -32,18 +32,30 @@ dir_full <- function(dpath) {
 # PROGRESS REPORT
 
 
+# read in source files
 fnames <- unlist(sapply(dir_full("src"), dir_full))
-# mat <- do.call(rbind, strsplit(fnames, "/"))[, -1]
-
 mat <- do.call(rbind, strsplit(gsub("^.+_0*", "", fnames), "\\."))
 mat <- mat[mat[, 1] != "", ]
 
+# matrix becomes rows and columns
 x <- as.numeric(mat[, 1])
 y <- mat[, 2]
 r <- suniq(x)
 c <- suniq(y)
 
-mat <- matrix("", length(r), length(c), dimnames = list(r, c))
+# want titles of the problems
+fpaths <- dir_full("docs")
+texts <- sapply(fpaths, function(fpath) {
+    lines <- readLines(fpath)
+    index <- startsWith(lines, "# ")
+    gsub("# ", "", lines[index])
+})
+
+# names become number
+names(texts) <- gsub("^.+_0*(.+?)\\..+$", "\\1", names(texts))
+
+dnames <- list(sprintf("[%s] %s", r, texts[r]), c)
+mat <- matrix("", length(r), length(c), dimnames = dnames)
 for (i in 1:length(x)) {
     mat[x[i], y[i]] <- sprintf("[&#x2713;](src/%s/pe_%04d.%s)", y[i], x[i], y[i])
 }
