@@ -45,10 +45,8 @@ c <- suniq(y)
 
 mat <- matrix("", length(r), length(c), dimnames = list(r, c))
 for (i in 1:length(x)) {
-    mat[x[i], y[i]] <- "&#x2713;"
+    mat[x[i], y[i]] <- sprintf("[&#x2713;](src/%s/pe_%04d.%s)", y[i], x[i], y[i])
 }
-
-mat
 
 header <- c("Problem", langs[colnames(mat)])
 bar <- rep("-", length(header))
