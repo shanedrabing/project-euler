@@ -46,7 +46,7 @@ for (int i = 1; i <= 10; ++i) {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>C++</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -77,7 +77,7 @@ for (int i = 1; i <= 10; ++i) {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>Go</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -108,7 +108,7 @@ for i := 1; i <= 10; i++ {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>Java</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -139,7 +139,7 @@ for (int i = 1; i <= 10; ++i) {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>JavaScript</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -170,7 +170,7 @@ for (i = 1; i <= 10; ++i) {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>Julia</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -201,7 +201,7 @@ end
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>Perl</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -232,7 +232,7 @@ for ($i = 1; $i <= 10; ++$i) {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>Python</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -261,7 +261,7 @@ for i in range(1, 10 + 1):
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>R</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -292,7 +292,7 @@ for (i in 1:10) {
 ```
 
 </details>
-<br></details>
+</details>
 
 <details><summary>Bash</summary><br>
 <details><summary>Control Flow (if, else-if, else)</summary><br>
@@ -323,4 +323,4 @@ done
 ```
 
 </details>
-<br></details>
+</details>

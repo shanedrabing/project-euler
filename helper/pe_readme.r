@@ -95,7 +95,7 @@ snippets <- paste(lapply(names(index), function(key) {
         df_sub$title, df_sub$text
     ), collapse = "\n")
     key_val <- sprintf(
-        "<details><summary>%s</summary><br>\n%s<br></details>\n",
+        "<details><summary>%s</summary><br>\n%s</details>\n",
         langs[key], val
     )
 }), collapse = "\n")
