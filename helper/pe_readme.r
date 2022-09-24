@@ -85,6 +85,7 @@ df <- do.call(rbind, lapply(texts, function(text) {
     data.frame(lang = lang, title = title, text = soln)
 }))
 
+df <- df[order(df$title), ]
 index <- tapply(1:nrow(df), df$lang, c)
 
 snippets <- paste(lapply(names(index), function(key) {

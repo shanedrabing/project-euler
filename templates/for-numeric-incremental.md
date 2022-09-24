@@ -1,4 +1,4 @@
-# For-Loop (numeric)
+# For-Loop (numeric, incremental)
 
 ```c
 int n = 1;

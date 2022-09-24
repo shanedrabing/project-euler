@@ -38,11 +38,23 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```c
 int n = 1;
 for (int i = 1; i <= 10; ++i) {
+    printf("%d\n", n);
+    n *= i;
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```c
+int n = 1;
+for (int i = 1; i <= 10; i += 2) {
     printf("%d\n", n);
     n *= i;
 }
@@ -75,11 +87,23 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```cpp
 int n = 1;
 for (int i = 1; i <= 10; ++i) {
+    std::cout << n << std::endl;
+    n *= i;
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```cpp
+int n = 1;
+for (int i = 1; i <= 10; i += 2) {
     std::cout << n << std::endl;
     n *= i;
 }
@@ -112,11 +136,23 @@ if i % 15 == 0 {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```go
 n := 1
 for i := 1; i <= 10; i++ {
+    println(n)
+    n *= i;
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```go
+n := 1
+for i := 1; i <= 10; i += 2 {
     println(n)
     n *= i;
 }
@@ -149,11 +185,23 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```java
 int n = 1;
 for (int i = 1; i <= 10; ++i) {
+    System.out.println(n);
+    n *= i;
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```java
+int n = 1;
+for (int i = 1; i <= 10; i += 2) {
     System.out.println(n);
     n *= i;
 }
@@ -186,11 +234,23 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```js
 n = 1;
 for (i = 1; i <= 10; ++i) {
+    console.log(n);
+    n *= i;
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```js
+n = 1;
+for (i = 1; i <= 10; += 2) {
     console.log(n);
     n *= i;
 }
@@ -223,11 +283,23 @@ end
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```julia
 n = 1
 for i in 1:10
+    println(n)
+    n *= i
+end
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```julia
+n = 1
+for i in range(1, 10, step=2)
     println(n)
     n *= i
 end
@@ -260,11 +332,23 @@ if ($i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```pl
 $n = 1;
 for ($i = 1; $i <= 10; ++$i) {
+    print $n . "\n";
+    $n *= $i;
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```pl
+$n = 1;
+for ($i = 1; $i <= 10; $i += 2) {
     print $n . "\n";
     $n *= $i;
 }
@@ -296,11 +380,22 @@ else:
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```py
 n = 1
 for i in range(1, 10 + 1):
+    print(n)
+    n *= i
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```py
+n = 1
+for i in range(1, 10 + 1, 2):
     print(n)
     n *= i
 ```
@@ -332,11 +427,23 @@ if (i %% 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```r
 n = 1
 for (i in 1:10) {
+    message(n)
+    n <- n * i
+}
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```r
+n = 1
+for (i in seq.int(1, 10, 2) {
     message(n)
     n <- n * i
 }
@@ -369,11 +476,23 @@ fi
 
 </details>
 
-<details><summary>For-Loop (numeric)</summary><br>
+<details><summary>For-Loop (numeric, incremental)</summary><br>
 
 ```sh
 n=1;
 for i in {1..10}; do
+    echo $n;
+    (( n *= i ));
+done
+```
+
+</details>
+
+<details><summary>For-Loop (numeric, stepped)</summary><br>
+
+```sh
+n=1;
+for (( i = 1; i < 10; i += 2 )); do
     echo $n;
     (( n *= i ));
 done
