@@ -14,6 +14,7 @@ Problem|C|C++|Go|Java|Julia|JavaScript|Perl|Python|R|Bash
 8: Largest product in a series|[&#x2713;](src/c/pe_0008.c)|[&#x2713;](src/cpp/pe_0008.cpp)|[&#x2713;](src/go/pe_0008.go)|[&#x2713;](src/java/pe_0008.java)|[&#x2713;](src/jl/pe_0008.jl)|[&#x2713;](src/js/pe_0008.js)|[&#x2713;](src/pl/pe_0008.pl)|[&#x2713;](src/py/pe_0008.py)|[&#x2713;](src/r/pe_0008.r)|[&#x2713;](src/sh/pe_0008.sh)
 9: Special Pythagorean triplet|[&#x2713;](src/c/pe_0009.c)|[&#x2713;](src/cpp/pe_0009.cpp)|[&#x2713;](src/go/pe_0009.go)|[&#x2713;](src/java/pe_0009.java)|[&#x2713;](src/jl/pe_0009.jl)|[&#x2713;](src/js/pe_0009.js)|[&#x2713;](src/pl/pe_0009.pl)|[&#x2713;](src/py/pe_0009.py)|[&#x2713;](src/r/pe_0009.r)|[&#x2713;](src/sh/pe_0009.sh)
 10: Summation of primes|[&#x2713;](src/c/pe_0010.c)|[&#x2713;](src/cpp/pe_0010.cpp)|[&#x2713;](src/go/pe_0010.go)|[&#x2713;](src/java/pe_0010.java)|[&#x2713;](src/jl/pe_0010.jl)|[&#x2713;](src/js/pe_0010.js)|[&#x2713;](src/pl/pe_0010.pl)|[&#x2713;](src/py/pe_0010.py)|[&#x2713;](src/r/pe_0010.r)|[&#x2713;](src/sh/pe_0010.sh)
+11: Largest product in a grid||||||||[&#x2713;](src/py/pe_0011.py)||
 
 ## Snippets
 
