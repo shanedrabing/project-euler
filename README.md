@@ -39,7 +39,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```c
 int n = 1;
@@ -88,7 +88,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```cpp
 int n = 1;
@@ -137,7 +137,7 @@ if i % 15 == 0 {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```go
 n := 1
@@ -186,7 +186,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```java
 int n = 1;
@@ -235,7 +235,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```js
 n = 1;
@@ -284,7 +284,7 @@ end
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```julia
 n = 1
@@ -333,7 +333,7 @@ if ($i % 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```pl
 $n = 1;
@@ -381,7 +381,7 @@ else:
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```py
 n = 1
@@ -428,7 +428,7 @@ if (i %% 15 == 0) {
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```r
 n = 1
@@ -477,7 +477,7 @@ fi
 
 </details>
 
-<details><summary>For-Loop (numeric, incremental)</summary><br>
+<details><summary>For-Loop (numeric, sequential)</summary><br>
 
 ```sh
 n=1;
