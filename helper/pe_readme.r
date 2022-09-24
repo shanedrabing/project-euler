@@ -1,3 +1,29 @@
+# CONSTANTS
+
+
+langs <- c(
+    "c" = "C",
+    "cpp" = "C++",
+    "go" = "Go",
+    "java" = "Java",
+    "jl" = "Julia",
+    "julia" = "Julia",
+    "js" = "JavaScript",
+    "pl" = "Perl",
+    "py" = "Python",
+    "r" = "R",
+    "sh" = "Bash"
+)
+
+
+# FUNCTIONS
+
+
+suniq <- function(x) {
+    sort(unique(x))
+}
+
+
 dir_full <- function(dpath) {
     file.path(dpath, dir(dpath))
 }
@@ -7,44 +33,53 @@ dir_full <- function(dpath) {
 
 
 fnames <- unlist(sapply(dir_full("src"), dir_full))
-mat <- do.call(rbind, strsplit(fnames, "/"))[, -1]
+# mat <- do.call(rbind, strsplit(fnames, "/"))[, -1]
 
-length <- 65
-dat <- table(mat[!grepl("_fail", mat[, 2]), 1]) - 1
-tbl <- round(length * dat / 772)
+mat <- do.call(rbind, strsplit(gsub("^.+_0*", "", fnames), "\\."))
+mat <- mat[mat[, 1] != "", ]
 
-build <- ""
-for (k in sort(names(tbl))) {
-    v <- tbl[[k]]
-    u <- length - v
-    build <- paste0(
-        trimws(build, which = "right"), "\n",
-        sprintf("%4s", k),
-        sprintf(" (%3.d)", dat[k]),
-        ": [",
-        paste(rep("#", v), collapse = ""),
-        paste(rep(" ", u), collapse = ""),
-        "]",
-        collapse = ""
-    )
+x <- as.numeric(mat[, 1])
+y <- mat[, 2]
+r <- suniq(x)
+c <- suniq(y)
+
+mat <- matrix("", length(r), length(c), dimnames = list(r, c))
+for (i in 1:length(x)) {
+    mat[x[i], y[i]] <- "&#x2713;"
 }
+
+mat
+
+header <- c("Problem", langs[colnames(mat)])
+bar <- rep("-", length(header))
+body <- cbind(rownames(mat), mat)
+
+lines <- apply(rbind(header, bar, body), 1, paste, collapse = "|")
+build <- paste(lines, collapse = "\n")
+
+# length <- 65
+# dat <- table(mat[!grepl("_fail", mat[, 2]), 1]) - 1
+# tbl <- round(length * dat / 772)
+
+# build <- ""
+# for (k in sort(names(tbl))) {
+#     v <- tbl[[k]]
+#     u <- length - v
+#     build <- paste0(
+#         trimws(build, which = "right"), "\n",
+#         sprintf("%4s", k),
+#         sprintf(" (%3.d)", dat[k]),
+#         ": [",
+#         paste(rep("#", v), collapse = ""),
+#         paste(rep(" ", u), collapse = ""),
+#         "]",
+#         collapse = ""
+#     )
+# }
 
 
 # TEMPLATES
 
-
-langs <- rbind(
-    c("c", "C"),
-    c("cpp", "C++"),
-    c("go", "Go"),
-    c("java", "Java"),
-    c("julia", "Julia"),
-    c("js", "JavaScript"),
-    c("pl", "Perl"),
-    c("py", "Python"),
-    c("r", "R"),
-    c("sh", "Bash")
-)
 
 fpaths <- sort(dir_full("templates"))
 texts <- lapply(fpaths, function(fpath) {
@@ -55,10 +90,10 @@ texts <- lapply(fpaths, function(fpath) {
 texts <- lapply(texts, function(text) {
     text <- gsub("(#+)\\s+?([^\n]+)", "<details><summary>\\2</summary><br>", text)
     text <- gsub("(```)(\\w+)", "!!!\\2!!!\n\n\\1\\2", text)
-    for (i in 1:nrow(langs)) {
+    for (i in 1:length(langs)) {
         text <- gsub(
-            sprintf("!!!%s!!!", langs[i, 1]),
-            sprintf("Example in %s", langs[i, 2]),
+            sprintf("!!!%s!!!", names(langs)[i]),
+            sprintf("Example in %s", langs[i]),
             text
         )
     }
@@ -71,8 +106,8 @@ texts <- lapply(texts, function(text) {
 
 form <- "# Project Euler\n
 ## Progress\n
-```txt%s\n```\n
-## Syntax Templates\n
+%s\n
+## Snippets\n
 %s"
 
 out <- sprintf(

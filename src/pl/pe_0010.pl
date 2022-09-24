@@ -25,7 +25,7 @@ use warnings;
     for ($i = 3; $i < $size; $i += 2) {
         $prime[$i] = 1;
     }
-    
+
     # disregard multiples of primes
     for ($i = 3; $i < $half; $i += 2) {
         if ($prime[$i]) {
