@@ -54,7 +54,7 @@ texts <- sapply(fpaths, function(fpath) {
 # names become number
 names(texts) <- gsub("^.+_0*(.+?)\\..+$", "\\1", names(texts))
 
-dnames <- list(sprintf("[%s] %s", r, texts[r]), c)
+dnames <- list(sprintf("%s: %s", r, texts[r]), c)
 mat <- matrix("", length(r), length(c), dimnames = dnames)
 for (i in 1:length(x)) {
     mat[x[i], y[i]] <- sprintf("[&#x2713;](src/%s/pe_%04d.%s)", y[i], x[i], y[i])
@@ -67,26 +67,6 @@ body <- cbind(rownames(mat), mat)
 lines <- apply(rbind(header, bar, body), 1, paste, collapse = "|")
 build <- paste(lines, collapse = "\n")
 
-# length <- 65
-# dat <- table(mat[!grepl("_fail", mat[, 2]), 1]) - 1
-# tbl <- round(length * dat / 772)
-
-# build <- ""
-# for (k in sort(names(tbl))) {
-#     v <- tbl[[k]]
-#     u <- length - v
-#     build <- paste0(
-#         trimws(build, which = "right"), "\n",
-#         sprintf("%4s", k),
-#         sprintf(" (%3.d)", dat[k]),
-#         ": [",
-#         paste(rep("#", v), collapse = ""),
-#         paste(rep(" ", u), collapse = ""),
-#         "]",
-#         collapse = ""
-#     )
-# }
-
 
 # TEMPLATES
 
@@ -97,18 +77,28 @@ texts <- lapply(fpaths, function(fpath) {
     paste(lines, collapse = "\n")
 })
 
-texts <- lapply(texts, function(text) {
-    text <- gsub("(#+)\\s+?([^\n]+)", "<details><summary>\\2</summary><br>", text)
-    text <- gsub("(```)(\\w+)", "!!!\\2!!!\n\n\\1\\2", text)
-    for (i in 1:length(langs)) {
-        text <- gsub(
-            sprintf("!!!%s!!!", names(langs)[i]),
-            sprintf("Example in %s", langs[i]),
-            text
-        )
-    }
-    text
-})
+df <- do.call(rbind, lapply(texts, function(text) {
+    lines <- unlist(strsplit(text, "\n{2,}"))
+    title <- gsub("# ", "", lines[1])
+    soln <- lines[-1]
+    lang <- gsub("^```(.+?)\n.+$", "\\1", soln)
+    data.frame(lang = lang, title = title, text = soln)
+}))
+
+index <- tapply(1:nrow(df), df$lang, c)
+
+snippets <- paste(lapply(names(index), function(key) {
+    i <- index[[key]]
+    df_sub <- df[i, ]
+    val <- paste(sprintf(
+        "<details><summary>%s</summary>\n\n%s\n\n</details>\n",
+        df_sub$title, df_sub$text
+    ), collapse = "\n")
+    key_val <- sprintf(
+        "<details><summary>%s</summary>\n%s<br></details>\n",
+        langs[key], val
+    )
+}), collapse = "\n")
 
 
 # FINAL DOC
@@ -120,10 +110,5 @@ form <- "# Project Euler\n
 ## Snippets\n
 %s"
 
-out <- sprintf(
-    form,
-    build,
-    paste(sprintf("%s\n\n</details>", texts), collapse = "\n")
-)
-
+out <- sprintf(form, build, snippets)
 writeLines(trimws(out), "README.md")

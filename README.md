@@ -4,22 +4,21 @@
 
 Problem|C|C++|Go|Java|Julia|JavaScript|Perl|Python|R|Bash
 -|-|-|-|-|-|-|-|-|-|-
-[1] Multiples of 3 or 5|[&#x2713;](src/c/pe_0001.c)|[&#x2713;](src/cpp/pe_0001.cpp)|[&#x2713;](src/go/pe_0001.go)|[&#x2713;](src/java/pe_0001.java)|[&#x2713;](src/jl/pe_0001.jl)|[&#x2713;](src/js/pe_0001.js)|[&#x2713;](src/pl/pe_0001.pl)|[&#x2713;](src/py/pe_0001.py)|[&#x2713;](src/r/pe_0001.r)|[&#x2713;](src/sh/pe_0001.sh)
-[2] Even Fibonacci numbers|[&#x2713;](src/c/pe_0002.c)|[&#x2713;](src/cpp/pe_0002.cpp)|[&#x2713;](src/go/pe_0002.go)|[&#x2713;](src/java/pe_0002.java)|[&#x2713;](src/jl/pe_0002.jl)|[&#x2713;](src/js/pe_0002.js)|[&#x2713;](src/pl/pe_0002.pl)|[&#x2713;](src/py/pe_0002.py)|[&#x2713;](src/r/pe_0002.r)|[&#x2713;](src/sh/pe_0002.sh)
-[3] Largest prime factor|[&#x2713;](src/c/pe_0003.c)|[&#x2713;](src/cpp/pe_0003.cpp)|[&#x2713;](src/go/pe_0003.go)|[&#x2713;](src/java/pe_0003.java)|[&#x2713;](src/jl/pe_0003.jl)|[&#x2713;](src/js/pe_0003.js)|[&#x2713;](src/pl/pe_0003.pl)|[&#x2713;](src/py/pe_0003.py)|[&#x2713;](src/r/pe_0003.r)|[&#x2713;](src/sh/pe_0003.sh)
-[4] Largest palindrome product|[&#x2713;](src/c/pe_0004.c)|[&#x2713;](src/cpp/pe_0004.cpp)|[&#x2713;](src/go/pe_0004.go)|[&#x2713;](src/java/pe_0004.java)|[&#x2713;](src/jl/pe_0004.jl)|[&#x2713;](src/js/pe_0004.js)|[&#x2713;](src/pl/pe_0004.pl)|[&#x2713;](src/py/pe_0004.py)|[&#x2713;](src/r/pe_0004.r)|[&#x2713;](src/sh/pe_0004.sh)
-[5] Smallest multiple|[&#x2713;](src/c/pe_0005.c)|[&#x2713;](src/cpp/pe_0005.cpp)|[&#x2713;](src/go/pe_0005.go)|[&#x2713;](src/java/pe_0005.java)|[&#x2713;](src/jl/pe_0005.jl)|[&#x2713;](src/js/pe_0005.js)|[&#x2713;](src/pl/pe_0005.pl)|[&#x2713;](src/py/pe_0005.py)|[&#x2713;](src/r/pe_0005.r)|[&#x2713;](src/sh/pe_0005.sh)
-[6] Sum square difference|[&#x2713;](src/c/pe_0006.c)|[&#x2713;](src/cpp/pe_0006.cpp)|[&#x2713;](src/go/pe_0006.go)|[&#x2713;](src/java/pe_0006.java)|[&#x2713;](src/jl/pe_0006.jl)|[&#x2713;](src/js/pe_0006.js)|[&#x2713;](src/pl/pe_0006.pl)|[&#x2713;](src/py/pe_0006.py)|[&#x2713;](src/r/pe_0006.r)|[&#x2713;](src/sh/pe_0006.sh)
-[7] 10001st prime|[&#x2713;](src/c/pe_0007.c)|[&#x2713;](src/cpp/pe_0007.cpp)|[&#x2713;](src/go/pe_0007.go)|[&#x2713;](src/java/pe_0007.java)|[&#x2713;](src/jl/pe_0007.jl)|[&#x2713;](src/js/pe_0007.js)|[&#x2713;](src/pl/pe_0007.pl)|[&#x2713;](src/py/pe_0007.py)|[&#x2713;](src/r/pe_0007.r)|[&#x2713;](src/sh/pe_0007.sh)
-[8] Largest product in a series|[&#x2713;](src/c/pe_0008.c)|[&#x2713;](src/cpp/pe_0008.cpp)|[&#x2713;](src/go/pe_0008.go)|[&#x2713;](src/java/pe_0008.java)|[&#x2713;](src/jl/pe_0008.jl)|[&#x2713;](src/js/pe_0008.js)|[&#x2713;](src/pl/pe_0008.pl)|[&#x2713;](src/py/pe_0008.py)|[&#x2713;](src/r/pe_0008.r)|[&#x2713;](src/sh/pe_0008.sh)
-[9] Special Pythagorean triplet|[&#x2713;](src/c/pe_0009.c)|[&#x2713;](src/cpp/pe_0009.cpp)|[&#x2713;](src/go/pe_0009.go)|[&#x2713;](src/java/pe_0009.java)|[&#x2713;](src/jl/pe_0009.jl)|[&#x2713;](src/js/pe_0009.js)|[&#x2713;](src/pl/pe_0009.pl)|[&#x2713;](src/py/pe_0009.py)|[&#x2713;](src/r/pe_0009.r)|[&#x2713;](src/sh/pe_0009.sh)
-[10] Summation of primes|[&#x2713;](src/c/pe_0010.c)|[&#x2713;](src/cpp/pe_0010.cpp)|[&#x2713;](src/go/pe_0010.go)|[&#x2713;](src/java/pe_0010.java)|[&#x2713;](src/jl/pe_0010.jl)|[&#x2713;](src/js/pe_0010.js)|[&#x2713;](src/pl/pe_0010.pl)|[&#x2713;](src/py/pe_0010.py)|[&#x2713;](src/r/pe_0010.r)|[&#x2713;](src/sh/pe_0010.sh)
+1: Multiples of 3 or 5|[&#x2713;](src/c/pe_0001.c)|[&#x2713;](src/cpp/pe_0001.cpp)|[&#x2713;](src/go/pe_0001.go)|[&#x2713;](src/java/pe_0001.java)|[&#x2713;](src/jl/pe_0001.jl)|[&#x2713;](src/js/pe_0001.js)|[&#x2713;](src/pl/pe_0001.pl)|[&#x2713;](src/py/pe_0001.py)|[&#x2713;](src/r/pe_0001.r)|[&#x2713;](src/sh/pe_0001.sh)
+2: Even Fibonacci numbers|[&#x2713;](src/c/pe_0002.c)|[&#x2713;](src/cpp/pe_0002.cpp)|[&#x2713;](src/go/pe_0002.go)|[&#x2713;](src/java/pe_0002.java)|[&#x2713;](src/jl/pe_0002.jl)|[&#x2713;](src/js/pe_0002.js)|[&#x2713;](src/pl/pe_0002.pl)|[&#x2713;](src/py/pe_0002.py)|[&#x2713;](src/r/pe_0002.r)|[&#x2713;](src/sh/pe_0002.sh)
+3: Largest prime factor|[&#x2713;](src/c/pe_0003.c)|[&#x2713;](src/cpp/pe_0003.cpp)|[&#x2713;](src/go/pe_0003.go)|[&#x2713;](src/java/pe_0003.java)|[&#x2713;](src/jl/pe_0003.jl)|[&#x2713;](src/js/pe_0003.js)|[&#x2713;](src/pl/pe_0003.pl)|[&#x2713;](src/py/pe_0003.py)|[&#x2713;](src/r/pe_0003.r)|[&#x2713;](src/sh/pe_0003.sh)
+4: Largest palindrome product|[&#x2713;](src/c/pe_0004.c)|[&#x2713;](src/cpp/pe_0004.cpp)|[&#x2713;](src/go/pe_0004.go)|[&#x2713;](src/java/pe_0004.java)|[&#x2713;](src/jl/pe_0004.jl)|[&#x2713;](src/js/pe_0004.js)|[&#x2713;](src/pl/pe_0004.pl)|[&#x2713;](src/py/pe_0004.py)|[&#x2713;](src/r/pe_0004.r)|[&#x2713;](src/sh/pe_0004.sh)
+5: Smallest multiple|[&#x2713;](src/c/pe_0005.c)|[&#x2713;](src/cpp/pe_0005.cpp)|[&#x2713;](src/go/pe_0005.go)|[&#x2713;](src/java/pe_0005.java)|[&#x2713;](src/jl/pe_0005.jl)|[&#x2713;](src/js/pe_0005.js)|[&#x2713;](src/pl/pe_0005.pl)|[&#x2713;](src/py/pe_0005.py)|[&#x2713;](src/r/pe_0005.r)|[&#x2713;](src/sh/pe_0005.sh)
+6: Sum square difference|[&#x2713;](src/c/pe_0006.c)|[&#x2713;](src/cpp/pe_0006.cpp)|[&#x2713;](src/go/pe_0006.go)|[&#x2713;](src/java/pe_0006.java)|[&#x2713;](src/jl/pe_0006.jl)|[&#x2713;](src/js/pe_0006.js)|[&#x2713;](src/pl/pe_0006.pl)|[&#x2713;](src/py/pe_0006.py)|[&#x2713;](src/r/pe_0006.r)|[&#x2713;](src/sh/pe_0006.sh)
+7: 10001st prime|[&#x2713;](src/c/pe_0007.c)|[&#x2713;](src/cpp/pe_0007.cpp)|[&#x2713;](src/go/pe_0007.go)|[&#x2713;](src/java/pe_0007.java)|[&#x2713;](src/jl/pe_0007.jl)|[&#x2713;](src/js/pe_0007.js)|[&#x2713;](src/pl/pe_0007.pl)|[&#x2713;](src/py/pe_0007.py)|[&#x2713;](src/r/pe_0007.r)|[&#x2713;](src/sh/pe_0007.sh)
+8: Largest product in a series|[&#x2713;](src/c/pe_0008.c)|[&#x2713;](src/cpp/pe_0008.cpp)|[&#x2713;](src/go/pe_0008.go)|[&#x2713;](src/java/pe_0008.java)|[&#x2713;](src/jl/pe_0008.jl)|[&#x2713;](src/js/pe_0008.js)|[&#x2713;](src/pl/pe_0008.pl)|[&#x2713;](src/py/pe_0008.py)|[&#x2713;](src/r/pe_0008.r)|[&#x2713;](src/sh/pe_0008.sh)
+9: Special Pythagorean triplet|[&#x2713;](src/c/pe_0009.c)|[&#x2713;](src/cpp/pe_0009.cpp)|[&#x2713;](src/go/pe_0009.go)|[&#x2713;](src/java/pe_0009.java)|[&#x2713;](src/jl/pe_0009.jl)|[&#x2713;](src/js/pe_0009.js)|[&#x2713;](src/pl/pe_0009.pl)|[&#x2713;](src/py/pe_0009.py)|[&#x2713;](src/r/pe_0009.r)|[&#x2713;](src/sh/pe_0009.sh)
+10: Summation of primes|[&#x2713;](src/c/pe_0010.c)|[&#x2713;](src/cpp/pe_0010.cpp)|[&#x2713;](src/go/pe_0010.go)|[&#x2713;](src/java/pe_0010.java)|[&#x2713;](src/jl/pe_0010.jl)|[&#x2713;](src/js/pe_0010.js)|[&#x2713;](src/pl/pe_0010.pl)|[&#x2713;](src/py/pe_0010.py)|[&#x2713;](src/r/pe_0010.r)|[&#x2713;](src/sh/pe_0010.sh)
 
 ## Snippets
 
-<details><summary>Control Flow (if, else-if, else)</summary><br>
-
-Example in C
+<details><summary>C</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```c
 int i = 10;
@@ -34,7 +33,23 @@ if (i % 15 == 0) {
 }
 ```
 
-Example in C++
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```c
+int n = 1;
+for (int i = 1; i <= 10; ++i) {
+    printf("%d\n", n);
+    n *= i;
+}
+```
+
+</details>
+<br></details>
+
+<details><summary>C++</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```cpp
 int i = 10;
@@ -49,7 +64,23 @@ if (i % 15 == 0) {
 }
 ```
 
-Example in Go
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```cpp
+int n = 1;
+for (int i = 1; i <= 10; ++i) {
+    std::cout << n << std::endl;
+    n *= i;
+}
+```
+
+</details>
+<br></details>
+
+<details><summary>Go</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```go
 i := 10
@@ -64,7 +95,23 @@ if i % 15 == 0 {
 }
 ```
 
-Example in Java
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```go
+n := 1
+for i := 1; i <= 10; i++ {
+    println(n)
+    n *= i;
+}
+```
+
+</details>
+<br></details>
+
+<details><summary>Java</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```java
 int i = 10;
@@ -79,22 +126,23 @@ if (i % 15 == 0) {
 }
 ```
 
-Example in Julia
+</details>
 
-```julia
-i = 10
-if i % 15 == 0
-    println("FizzBuzz")
-elseif i % 3 == 0
-    println("Fizz")
-elseif i % 5 == 0
-    println("Buzz")
-else
-    println(i)
-end
+<details><summary>For-Loop (numeric)</summary>
+
+```java
+int n = 1;
+for (int i = 1; i <= 10; ++i) {
+    System.out.println(n);
+    n *= i;
+}
 ```
 
-Example in JavaScript
+</details>
+<br></details>
+
+<details><summary>JavaScript</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```js
 i = 10;
@@ -109,7 +157,54 @@ if (i % 15 == 0) {
 }
 ```
 
-Example in Perl
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```js
+n = 1;
+for (i = 1; i <= 10; ++i) {
+    console.log(n);
+    n *= i;
+}
+```
+
+</details>
+<br></details>
+
+<details><summary>Julia</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
+
+```julia
+i = 10
+if i % 15 == 0
+    println("FizzBuzz")
+elseif i % 3 == 0
+    println("Fizz")
+elseif i % 5 == 0
+    println("Buzz")
+else
+    println(i)
+end
+```
+
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```julia
+n = 1
+for i in 1:10
+    println(n)
+    n *= i
+end
+```
+
+</details>
+<br></details>
+
+<details><summary>Perl</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```pl
 $i = 10;
@@ -124,7 +219,23 @@ if ($i % 15 == 0) {
 }
 ```
 
-Example in Python
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```pl
+$n = 1;
+for ($i = 1; $i <= 10; ++$i) {
+    print $n . "\n";
+    $n *= $i;
+}
+```
+
+</details>
+<br></details>
+
+<details><summary>Python</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```py
 i = 10
@@ -138,7 +249,22 @@ else:
     print(i)
 ```
 
-Example in R
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```py
+n = 1
+for i in range(1, 10 + 1):
+    print(n)
+    n *= i
+```
+
+</details>
+<br></details>
+
+<details><summary>R</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```r
 i = 10;
@@ -153,7 +279,23 @@ if (i %% 15 == 0) {
 }
 ```
 
-Example in Bash
+</details>
+
+<details><summary>For-Loop (numeric)</summary>
+
+```r
+n = 1
+for (i in 1:10) {
+    message(n)
+    n <- n * i
+}
+```
+
+</details>
+<br></details>
+
+<details><summary>Bash</summary>
+<details><summary>Control Flow (if, else-if, else)</summary>
 
 ```sh
 i=10;
@@ -169,98 +311,8 @@ fi
 ```
 
 </details>
-<details><summary>For-Loop (numeric)</summary><br>
 
-Example in C
-
-```c
-int n = 1;
-for (int i = 1; i <= 10; ++i) {
-    printf("%d\n", n);
-    n *= i;
-}
-```
-
-Example in C++
-
-```cpp
-int n = 1;
-for (int i = 1; i <= 10; ++i) {
-    std::cout << n << std::endl;
-    n *= i;
-}
-```
-
-Example in Go
-
-```go
-n := 1
-for i := 1; i <= 10; i++ {
-    println(n)
-    n *= i;
-}
-```
-
-Example in Java
-
-```java
-int n = 1;
-for (int i = 1; i <= 10; ++i) {
-    System.out.println(n);
-    n *= i;
-}
-```
-
-Example in Julia
-
-```julia
-n = 1
-for i in 1:10
-    println(n)
-    n *= i
-end
-```
-
-Example in JavaScript
-
-```js
-n = 1;
-for (i = 1; i <= 10; ++i) {
-    console.log(n);
-    n *= i;
-}
-```
-
-Example in Perl
-
-```pl
-$n = 1;
-for ($i = 1; $i <= 10; ++$i) {
-    print $n . "\n";
-    $n *= $i;
-}
-```
-
-Example in Python
-
-```py
-n = 1
-for i in range(1, 10 + 1):
-    print(n)
-    n *= i
-```
-
-Example in R
-
-```r
-n = 1
-for (i in 1:10) {
-    message(n)
-    n <- n * i
-}
-```
-
-Example in Bash
+<details><summary>For-Loop (numeric)</summary>
 
 ```sh
 n=1;
@@ -271,3 +323,4 @@ done
 ```
 
 </details>
+<br></details>
