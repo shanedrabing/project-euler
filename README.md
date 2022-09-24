@@ -19,7 +19,7 @@ Problem|C|C++|Go|Java|Julia|JavaScript|Perl|Python|R|Bash
 
 <details><summary>C</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```c
 int i = 10;
@@ -36,7 +36,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```c
 int n = 1;
@@ -47,11 +47,11 @@ for (int i = 1; i <= 10; ++i) {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>C++</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```cpp
 int i = 10;
@@ -68,7 +68,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```cpp
 int n = 1;
@@ -79,11 +79,11 @@ for (int i = 1; i <= 10; ++i) {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>Go</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```go
 i := 10
@@ -100,7 +100,7 @@ if i % 15 == 0 {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```go
 n := 1
@@ -111,11 +111,11 @@ for i := 1; i <= 10; i++ {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>Java</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```java
 int i = 10;
@@ -132,7 +132,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```java
 int n = 1;
@@ -143,11 +143,11 @@ for (int i = 1; i <= 10; ++i) {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>JavaScript</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```js
 i = 10;
@@ -164,7 +164,7 @@ if (i % 15 == 0) {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```js
 n = 1;
@@ -175,11 +175,11 @@ for (i = 1; i <= 10; ++i) {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>Julia</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```julia
 i = 10
@@ -196,7 +196,7 @@ end
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```julia
 n = 1
@@ -207,11 +207,11 @@ end
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>Perl</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```pl
 $i = 10;
@@ -228,7 +228,7 @@ if ($i % 15 == 0) {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```pl
 $n = 1;
@@ -239,11 +239,11 @@ for ($i = 1; $i <= 10; ++$i) {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>Python</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```py
 i = 10
@@ -259,7 +259,7 @@ else:
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```py
 n = 1
@@ -269,11 +269,11 @@ for i in range(1, 10 + 1):
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>R</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```r
 i = 10;
@@ -290,7 +290,7 @@ if (i %% 15 == 0) {
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```r
 n = 1
@@ -301,11 +301,11 @@ for (i in 1:10) {
 ```
 
 </details>
-</details>
+<br></details>
 
 <details><summary>Bash</summary>
 
-<details><summary>╰ &nbsp;Control Flow (if, else-if, else)</summary><br>
+<details><summary>⇒ &nbsp;Control Flow (if, else-if, else)</summary><br>
 
 ```sh
 i=10;
@@ -322,7 +322,7 @@ fi
 
 </details>
 
-<details><summary>╰ &nbsp;For-Loop (numeric)</summary><br>
+<details><summary>⇒ &nbsp;For-Loop (numeric)</summary><br>
 
 ```sh
 n=1;
@@ -333,4 +333,4 @@ done
 ```
 
 </details>
-</details>
+<br></details>
