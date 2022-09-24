@@ -1,9 +1,5 @@
 function main()
-    n = 1
-    for i in 1:10
-        println(n)
-        n *= i
-    end
+    println(3 ÷ 2)
 end
 
 main()

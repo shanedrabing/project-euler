@@ -12,9 +12,5 @@ using std::endl;
 
 
 int main() {
-    int n = 1;
-    for (int i = 1; i <= 10; ++i) {
-        std::cout << n << std::endl;
-        n *= i;
-    }
+    std::cout << 3 / 2 << std::endl;
 }
