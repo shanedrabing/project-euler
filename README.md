@@ -63,6 +63,14 @@ for (int i = 1; i <= 10; i += 2) {
 
 </details>
 
+<details><summary>Operators (integer division)</summary><br>
+
+```c
+printf("%d", 3 / 2);
+```
+
+</details>
+
 ---
 
 </details>
@@ -108,6 +116,14 @@ for (int i = 1; i <= 10; i += 2) {
     std::cout << n << std::endl;
     n *= i;
 }
+```
+
+</details>
+
+<details><summary>Operators (integer division)</summary><br>
+
+```cpp
+std::cout << 3 / 2 << std::endl;
 ```
 
 </details>
@@ -161,6 +177,14 @@ for i := 1; i <= 10; i += 2 {
 
 </details>
 
+<details><summary>Operators (integer division)</summary><br>
+
+```go
+println(3 / 2)
+```
+
+</details>
+
 ---
 
 </details>
@@ -206,6 +230,14 @@ for (int i = 1; i <= 10; i += 2) {
     System.out.println(n);
     n *= i;
 }
+```
+
+</details>
+
+<details><summary>Operators (integer division)</summary><br>
+
+```java
+System.out.println(3 / 2);
 ```
 
 </details>
@@ -259,6 +291,14 @@ for (i = 1; i <= 10; += 2) {
 
 </details>
 
+<details><summary>Operators (integer division)</summary><br>
+
+```js
+console.log(Math.trunc(3 / 2))
+```
+
+</details>
+
 ---
 
 </details>
@@ -304,6 +344,14 @@ for i in range(1, 10, step=2)
     println(n)
     n *= i
 end
+```
+
+</details>
+
+<details><summary>Operators (integer division)</summary><br>
+
+```julia
+println(3 ÷ 2)
 ```
 
 </details>
@@ -357,6 +405,17 @@ for ($i = 1; $i <= 10; $i += 2) {
 
 </details>
 
+<details><summary>Operators (integer division)</summary><br>
+
+```pl
+{
+    use integer;
+    print 3 / 2;
+}
+```
+
+</details>
+
 ---
 
 </details>
@@ -399,6 +458,14 @@ n = 1
 for i in range(1, 10 + 1, 2):
     print(n)
     n *= i
+```
+
+</details>
+
+<details><summary>Operators (integer division)</summary><br>
+
+```py
+print(3 // 2)
 ```
 
 </details>
@@ -452,6 +519,14 @@ for (i in seq.int(1, 10, 2) {
 
 </details>
 
+<details><summary>Operators (integer division)</summary><br>
+
+```r
+cat(3 %/% 2, "\n")
+```
+
+</details>
+
 ---
 
 </details>
@@ -497,6 +572,14 @@ for (( i = 1; i < 10; i += 2 )); do
     echo $n;
     (( n *= i ));
 done
+```
+
+</details>
+
+<details><summary>Operators (integer division)</summary><br>
+
+```sh
+echo $(( 3 / 2 ));
 ```
 
 </details>

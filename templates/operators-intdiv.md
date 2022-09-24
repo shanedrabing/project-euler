@@ -1,4 +1,4 @@
-# Operator (integer division)
+# Operators (integer division)
 
 ```c
 printf("%d", 3 / 2);
