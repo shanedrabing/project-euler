@@ -1,7 +1,5 @@
 # Project Euler
 
-[Test Link](src/c/pe_0000.c)
-
 ## Progress
 
 Problem|C|C++|Go|Java|Julia|JavaScript|Perl|Python|R|Bash

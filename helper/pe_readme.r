@@ -103,7 +103,6 @@ texts <- lapply(texts, function(text) {
 
 
 form <- "# Project Euler\n
-[Test Link](src/c/pe_0000.c)\n
 ## Progress\n
 %s\n
 ## Snippets\n
